@@ -5,7 +5,7 @@ import javafx.scene.canvas.GraphicsContext;
 
 public class GameLoop extends AnimationTimer {
 
-    private static final long NANOS_IN_SECONDS = 1_000_000_000L;
+    private static final long NANOS_IN_SECOND = 1_000_000_000L;
 
     private long previousTime = System.nanoTime();
 
@@ -22,7 +22,7 @@ public class GameLoop extends AnimationTimer {
     public void handle(long now) {
         gc.clearRect(0, 0, Game.WIDTH, Game.HEIGHT);
 
-        double delta = ((double) (now - previousTime)) / NANOS_IN_SECONDS;
+        double delta = ((double) (now - previousTime)) / NANOS_IN_SECOND;
         previousTime = now;
 
         hero.update(delta);

@@ -13,12 +13,12 @@ public class Game extends Application {
     public static final int HEIGHT = 768;
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         stage.setTitle("Canvas Example");
 
         Group root = new Group();
-        Scene theScene = new Scene(root);
-        stage.setScene(theScene);
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
 
         Canvas canvas = new Canvas(WIDTH, HEIGHT);
         root.getChildren().add(canvas);
