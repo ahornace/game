@@ -11,7 +11,7 @@ public class Hero {
     private Image img;
 
     public Hero() {
-        img = new Image(Hero.class.getClassLoader().getResourceAsStream("Fire_enemy.png"));
+        img = new Image(Hero.class.getClassLoader().getResourceAsStream("winter/Object/SnowMan.png"));
     }
 
     public void update(double delta) {

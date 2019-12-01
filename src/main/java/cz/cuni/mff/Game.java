@@ -14,7 +14,7 @@ public class Game extends Application {
 
     @Override
     public void start(Stage stage) {
-        stage.setTitle("Canvas Example");
+        stage.setTitle("My First Game");
 
         Group root = new Group();
         Scene scene = new Scene(root);
